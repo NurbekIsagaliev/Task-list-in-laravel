@@ -15,3 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [UiController::class,'index']);
+
+Route::get('/edit/{id}', [UiController::class,'edit']);
+
+Route::put('/edit/{id}', [UiController::class,'saveEdit']);
+
+Route::post('/add_new', [UiController::class,'addNewUi']);
+
+Route::delete('/delete_ui/{id}', [UiController::class,'deleteExistingUi']);
+
+
